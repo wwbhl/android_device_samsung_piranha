@@ -88,7 +88,7 @@ ifdef BOARD_USE_TI_ENHANCED_DOMX
     COMMON_GLOBAL_CFLAGS += -DENHANCED_DOMX
     ENHANCED_DOMX := true
 else
-    DOMX_PATH := device/samsung/piranha/omap4xxx/domx
+    DOMX_PATH := hardware/ti/omap4xxx/domx
 endif
 
 ifdef OMAP_ENHANCEMENT

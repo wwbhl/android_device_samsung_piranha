@@ -40,7 +40,7 @@ __BEGIN_DECLS
 #define HWC_DEVICE_API_VERSION_1_2  HARDWARE_DEVICE_API_VERSION_2(1, 2, HWC_HEADER_VERSION)
 #define HWC_DEVICE_API_VERSION_1_3  HARDWARE_DEVICE_API_VERSION_2(1, 3, HWC_HEADER_VERSION)
 #define HWC_DEVICE_API_VERSION_1_4  HARDWARE_DEVICE_API_VERSION_2(1, 4, HWC_HEADER_VERSION)
-
+#define HWC_DEVICE_API_VERSION_1_5  HARDWARE_DEVICE_API_VERSION_2(1, 5, HWC_HEADER_VERSION)
 enum {
     /* hwc_composer_device_t::set failed in EGL */
     HWC_EGL_ERROR = -1
@@ -206,11 +206,11 @@ enum {
      */
     HWC_DISPLAY_DPI_X                       = 4,
     HWC_DISPLAY_DPI_Y                       = 5,
-    /* Indicates if the display is secure
-     * For HDMI/WFD if the sink supports HDCP, it will be true
-     * Primary panel is always considered secure
-     */
-    HWC_DISPLAY_SECURE                      = 6,
+
+    /* Indicates which of the vendor-defined color transforms is provided by
+     * this configuration. */
+    HWC_DISPLAY_COLOR_TRANSFORM             = 6,
+
 };
 
 /* Allowed events for hwc_methods::eventControl() */

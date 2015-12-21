@@ -67,7 +67,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp
 
 # Include omap4 specific parts
-$(call inherit-product, device/samsung/piranha/omap4xxx/omap4.mk)
+$(call inherit-product, hardware/ti/omap4xxx/omap4.mk)
 
 # Include non-opensource parts if available
 $(call inherit-product-if-exists, vendor/samsung/piranha/common-vendor.mk)
